@@ -40463,7 +40463,7 @@ const useFetchResturantCard = ()=>{
         fetchAPI();
     }, []);
     async function fetchAPI() {
-        let response = await fetch((0, _constant.resturantListURL1));
+        let response = await fetch((0, _constant.resturantListURL));
         let json_res = await response.json();
         // console.log(json_res.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
         setmodifyResturantList(json_res.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);

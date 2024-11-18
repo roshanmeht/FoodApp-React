@@ -9,7 +9,7 @@ const useFetchResturantCard=()=>{
     useEffect(()=>{fetchAPI()},[]);
 
     async function fetchAPI(){
-        let response= await fetch(resturantListURL1);
+        let response= await fetch(resturantListURL);
         let json_res=await response.json();
         
         // console.log(json_res.data.cards[4].card.card.gridElements.infoWithStyle.restaurants);
