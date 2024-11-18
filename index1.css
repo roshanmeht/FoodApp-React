@@ -1,0 +1,167 @@
+*{
+    box-sizing:border-box;
+}
+
+#header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border:2px solid green;
+}
+.logo img{
+    width:120px;
+}
+.nav ul{
+    display: flex;
+
+}
+.nav ul li{
+    list-style-type:none;
+    margin:15px;
+    font-weight: 700;
+}
+.nav ul li img{
+    width:23px;
+   
+}
+
+/* body css */
+.search{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+
+}
+input{
+    width: 95vw;
+}
+
+.search-icon{
+    width:23px;
+    margin-right:2px;
+    cursor: pointer;
+}
+
+.res-img{
+    width:100%;
+    padding: 5px;
+    height: 190px;
+  
+}
+.card{
+    background-color: #f0f0f0;
+    width: 200px;
+    margin: 3px;
+    cursor: pointer;
+}
+.card:hover{
+    border:2px solid black;
+}
+.resturant-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+.filter{
+    width: 200px;
+    height: 38px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.filter-btn{
+    border-radius: 5%;
+    cursor: pointer;
+}
+.svg{
+    padding: 8px;
+    width: 38px;
+    cursor: pointer;
+}
+
+.shimmer-search{
+    width: 98vw;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 5px;
+    margin-left: 0;
+}
+.shimmer-searchInput{
+   width:95%;
+   height: 20px;
+   margin-right: 5px;
+   
+   background-color: #f0f0f0;
+}
+.shimmer-searchButton{
+    width: 5%;
+    height: 20px;
+  background-color: #f0f0f0;
+}
+.shimmer-filter{
+    width: 200px;
+    height: 20px;
+    background-color: #f0f0f0;
+}
+.shimmer-body{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    background-color: #f0f0f0;
+    margin: 5px;
+    width: 300px;
+    height: 400px;
+}
+.resInfo{
+    display: flex;
+    width: 250px;
+    justify-content: start;
+    align-items: center;
+}
+.star{
+    margin-top: 4px;
+    margin-right:5px;
+}
+#resMain{
+    display: flex;
+    border: 2px solid red;
+    justify-content: space-between;
+    padding:10px;
+    background-color: rgb(243, 235, 236);
+}
+#resName{
+    color: red;
+    font-style: italic;
+}
+#menu{
+    margin-right:100px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    padding: 2px;
+}
+#menu div{
+    color: rgb(5, 53, 246);
+    margin:0;
+    margin-top: 22px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#menu ul{
+    margin:0;
+}
+.menuList{
+    color: rgb(244, 5, 140);
+    padding: 5px;
+    font-size: 17px;
+    
+}
+#aboutClass{
+    border: 2px solid red;
+}
