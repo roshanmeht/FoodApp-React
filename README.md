@@ -28,6 +28,7 @@ Run the development server:
 
 - Frontend : React.js, CSS3, JavaScript (ES6+)
 - External APIs : Swiggy API for fetching Resturant's Food Items
+- Deployment: Vercel Hosting
 
 ## Demo
  
