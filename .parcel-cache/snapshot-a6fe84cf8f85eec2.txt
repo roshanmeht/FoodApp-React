@@ -143,7 +143,7 @@
 28D:\FoodApp\node_modules\jest133710589370633075 1
 54D:\FoodApp\node_modules\@parcel\core\src\Validation.js133763919498346891 0
 45D:\FoodApp\node_modules\resolve\lib\core.json133701031509900482 0
-23D:\FoodApp\package.json133764805717581596 0
+23D:\FoodApp\package.json133764816953286246 0
 42D:\FoodApp\node_modules\.bin\escodegen.cmd133712269880959738 0
 53D:\FoodApp\node_modules\regenerator-transform\LICENSE133710595977118664 0
 90D:\FoodApp\node_modules\jest-each\node_modules\pretty-format\build\plugins\ReactElement.js133710589374351094 0
@@ -171,7 +171,7 @@
 38D:\FoodApp\node_modules\wrappy\LICENSE133710589351602324 0
 81D:\FoodApp\node_modules\scheduler\cjs\scheduler-unstable_post_task.development.js133701031442034455 0
 76D:\FoodApp\node_modules\@babel\plugin-syntax-import-attributes\tsconfig.json133710589362588761 0
-25D:\FoodApp\src\.gitignore133764327175063893 0
+25D:\FoodApp\src\.gitignore133764810314504948 0
 77D:\FoodApp\node_modules\caniuse-lite\data\features\kerning-pairs-ligatures.js133701031546169586 0
 51D:\FoodApp\node_modules\escodegen\bin\esgenerate.js133712269871092008 0
 58D:\FoodApp\node_modules\@swc\helpers\_\_async_to_generator133763919459651587 1
