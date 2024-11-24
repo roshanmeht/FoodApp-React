@@ -32,8 +32,10 @@ Run the development server:
 
 ## Demo
  
- 👉visit my live website
+ 👋visit my live website
 [https://food-app-react-delta.vercel.app/]
+
+👉🏻Please enable 'CORS' on your Browser before accessing the FoodApp. Download the Allow CORS chrome extension.
 
 - Home Page
 ![Home Page](https://github.com/roshanmeht/FoodApp-React/blob/main/Screenshot%20(1).png?raw=true)
