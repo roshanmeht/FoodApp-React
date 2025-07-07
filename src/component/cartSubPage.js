@@ -3,14 +3,14 @@ import { resImage } from "../common/constant";
 import { useDispatch } from "react-redux";
 import { removeItem } from "../common/CartSlice";
 const CartSubPage =(props)=>{
-   
-    const { imageId, price, name, description, ratings, defaultPrice } = props.cartprop.prop.card.info;
+     console.log(props);
+    const { imageId, price, name, description, ratings, defaultPrice ,id } = props.cartprop.prop.card.info;
     const { rating } = ratings.aggregatedRating;
      
     let removeItemDispatcher = useDispatch();
 
-    function RemoveFoodItems(){
-       removeItemDispatcher(removeItem());
+    function RemoveFoodItems(id){
+       removeItemDispatcher(removeItem(id));
     }
     return (
         <div className='flex justify-between item-center mx-1 my-2 border-gray-200 border-b-2  w-[50vw]'>
@@ -27,7 +27,7 @@ const CartSubPage =(props)=>{
             </div>
             <div className='flex flex-col justify-center items-center' >
                 <img src={resImage + imageId} className='w-[175px] p-1 rounded-xl' ></img>
-                <button className='bg-black text-white my-1 rounded px-2' onClick={RemoveFoodItems} > Remove</button>
+                <button className='bg-black text-white my-1 rounded px-2' onClick={()=>{RemoveFoodItems(id)}} > Remove</button>
             </div>
 
         </div>

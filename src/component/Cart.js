@@ -3,7 +3,7 @@ import CartSubPage from "./cartSubPage";
 import { Link } from "react-router-dom";
 import { clearCart } from "../common/CartSlice.js";
 const Cart = () => {
-    const cartItemDetails = useSelector((store) =>{return store.cart.cartItems;});
+    const cartItemDetails = useSelector((store) =>{console.log('store',store);return store.cart.cartItems;});
     const clearCartItemDispatcher = useDispatch();
         function clearCartItems(){
            clearCartItemDispatcher(clearCart());
