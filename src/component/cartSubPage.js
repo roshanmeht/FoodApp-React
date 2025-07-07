@@ -3,11 +3,9 @@ import { resImage } from "../common/constant";
 import { useDispatch } from "react-redux";
 import { removeItem } from "../common/CartSlice";
 const CartSubPage =(props)=>{
-    console.log('cartsubpage ahead');
-    console.log('vrr',props);
+   
     const { imageId, price, name, description, ratings, defaultPrice } = props.cartprop.prop.card.info;
     const { rating } = ratings.aggregatedRating;
-    console.log('name',name);
      
     let removeItemDispatcher = useDispatch();
 

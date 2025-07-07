@@ -3,8 +3,7 @@ import CartSubPage from "./cartSubPage";
 import { Link } from "react-router-dom";
 import { clearCart } from "../common/CartSlice.js";
 const Cart = () => {
-    const cartItemDetails = useSelector((store) => store.cart.cartItems);
-    console.log('test', cartItemDetails);
+    const cartItemDetails = useSelector((store) =>{return store.cart.cartItems;});
     const clearCartItemDispatcher = useDispatch();
         function clearCartItems(){
            clearCartItemDispatcher(clearCart());
@@ -23,8 +22,8 @@ const Cart = () => {
     return(
         <div className="my-[100px] flex flex-col items-center justify-center border-red-500 border-[2px] border-solid ">
         <button className="bg-black text-white rounded px-2 py-1 my-1" onClick={clearCartItems}>Clear Cart</button>
-            {cartItemDetails.map((item)=>{
-                return <CartSubPage cartprop={item}/>
+            {cartItemDetails.map((item,index)=>{
+                return <CartSubPage cartprop={item} key={item.prop.card.info.id}/>
             })}
         </div>
     )

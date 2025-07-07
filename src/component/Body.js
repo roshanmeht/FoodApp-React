@@ -9,6 +9,7 @@ import useOnlineCheck from '../common/useOnlineCheck';
 import useFetchResturantCard from '../common/useFetchResturantCard';
 
 
+
 const Body = () => {
     // console.log('body rendered');
     // const [modifyResturantList, setmodifyResturantList] = useState([]);
@@ -66,14 +67,6 @@ const Body = () => {
 const [searchString, setsearchString] = useState("");
 
 let [modifyResturantList , filteredResturantList ,setmodifyResturantList ,setfilteredResturantList ,fetchAPI] =useFetchResturantCard();
-
-//    console.log('mRL=',modifyResturantList);
-//    console.log('mFRL=',modifyResturantList)
-//    console.log('fetchApi()',fetchAPI);
-
-
-  
-   
   
     
     if(!useOnlineCheck()){
@@ -88,7 +81,7 @@ let [modifyResturantList , filteredResturantList ,setmodifyResturantList ,setfil
    
 
     return (
-        <div id='body' className='bg-[#d2d0d0ee] my-[98px]'>
+        <div id='body' className=' my-[98px]'>
             <div className='search py-2'>
                 <input className='w-[90vw] px-2 py-1 mx-3 rounded-md border-[2px] border-black border-solid' type='text' placeholder='search your favourite Resturant' value={searchString} onInput={(e) => {
                     setsearchString(e.target.value);
@@ -117,12 +110,12 @@ let [modifyResturantList , filteredResturantList ,setmodifyResturantList ,setfil
 
                 {/* filter-remove syntax */}
                 <a title='Remove-Filter'>
-                    <img  src={filterLogo} alt='filter' className='svg w-[25px]' onClick={() => { fetchAPI() }}></img>
+                    <img  src={filterLogo} alt='filter' className='svg w-[25px] cursor-pointer' onClick={() => { fetchAPI() }}></img>
                 </a>
 
             </div>
 
-            <div className='resturant-cards flex flex-wrap ml-[60px] '>
+            <div className=' flex flex-wrap ml-[60px] '>
               
                 {
                     filteredResturantList.map((res) =>

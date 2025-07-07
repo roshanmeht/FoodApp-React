@@ -13,11 +13,10 @@ const Header = () => {
     let status=useOnlineCheck();
 
     const Fooditems= useSelector((store)=>{
-        console.log('store',store);
         return store.cart.cartItems;
     });
 
-  console.log('Fooditems',Fooditems);
+
    
     return (
       

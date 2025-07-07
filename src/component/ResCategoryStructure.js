@@ -2,7 +2,6 @@ import SubCategoryStructure from "./subCategoryStructure";
 import { useState } from 'react';
 
 const ResCategoryStructure = (props) => {
-
     const [collapseItem, setcollapseItem] = useState(false);
     const { showItem, setShowIndex } = props;
 

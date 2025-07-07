@@ -1496,4 +1496,4 @@ restaurantList = [
     }
 ];
 
-export default restaurantList;
+//export default restaurantList;
