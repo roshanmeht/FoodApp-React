@@ -1,5 +1,4 @@
 const Shimmer=()=>{
-    console.log('shimmer');
     return (<div className='shimmer-ui'>
     <div className='text-black-600 mt-[22.5vh] font-semibold text-3xl'>
     <h1>Loading...</h1>
